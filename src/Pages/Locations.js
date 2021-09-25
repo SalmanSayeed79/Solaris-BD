@@ -58,8 +58,8 @@ export default function Locations() {
                 <Paper elevation={5} sx={{width:"60vw",minHeight:"40vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                     <Typography variant="h5" color="primary" fontFamily="Bree Serif" marginBottom="1vh">Enter the parameters</Typography>
                     <Box sx={{width:"40vw",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
-                    <TextField id="outlined-basic" label="Latitude" variant="outlined" type="number" defaultValue={lat} fullWidth sx={{marginTop:"5px"}}/>
-                    <TextField id="outlined-basic" label="Longitude" variant="outlined" type="number" defaultValue={lng} fullWidth sx={{marginTop:"5px"}}/>
+                    <TextField id="outlined-basic" label="Latitude" variant="outlined" type="number" value={lat} fullWidth sx={{marginTop:"5px"}}/>
+                    <TextField id="outlined-basic" label="Longitude" variant="outlined" type="number" value={lng} fullWidth sx={{marginTop:"5px"}}/>
                     <TextField id="outlined-basic" label="Start Date" variant="outlined" type="date" fullWidth sx={{marginTop:"5px"}}/>
                     <TextField id="outlined-basic" label="End Date" variant="outlined" type="date" fullWidth sx={{marginTop:"5px"}}/>
                     <Button variant="contained" sx={{marginTop:"3vh"}}>Get Data</Button>
