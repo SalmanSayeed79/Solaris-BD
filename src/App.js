@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, BrowserRouter,Switch} from 'react-router-dom'
+import {ThemeProvider} from '@mui/material'
+import {createTheme} from '@mui/material/styles'
+import orange from '@mui/material/colors/orange'
+import Home from './Pages/Home'
+import Locations from './Pages/Locations'
+import About from './Pages/About'
+import Appbar from './Components/Appbar'
+const customTheme=createTheme({
+  palette:{
+    primary: {
+      main:"#ff9800",
+      light:"#ffb74d",
+      dark:"#f57c00",
+      contrastText:"#f4f4f4"
+    },
+  }
+
+})
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ThemeProvider theme={customTheme}>
+      <Appbar/>
+      <Switch> 
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/locations" component={Locations}/>
+        <Route exact path="/about" component={About}/>
+      </Switch>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
