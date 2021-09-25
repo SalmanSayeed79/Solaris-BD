@@ -9,7 +9,7 @@ export default function Locations() {
     const [lat,setLat]=useState(23.8103)
     const [lng,setLng]=useState(90.4125)
     const containerStyle = {
-        width: '70vw',
+        width: '90vw',
         height: "50vh"
       };
       
