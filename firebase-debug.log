@@ -1,0 +1,59 @@
+[debug] [2021-09-29T16:42:40.383Z] ----------------------------------------------------------------------
+[debug] [2021-09-29T16:42:40.385Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\salmansayeed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-09-29T16:42:40.385Z] CLI Version:   8.10.0
+[debug] [2021-09-29T16:42:40.385Z] Platform:      win32
+[debug] [2021-09-29T16:42:40.385Z] Node Version:  v15.7.0
+[debug] [2021-09-29T16:42:40.386Z] Time:          Wed Sep 29 2021 22:42:40 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-09-29T16:42:40.386Z] ----------------------------------------------------------------------
+[debug] [2021-09-29T16:42:40.386Z] 
+[debug] [2021-09-29T16:42:40.395Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-29T16:42:40.396Z] > authorizing via signed-in user
+[debug] [2021-09-29T16:42:40.396Z] [iam] checking project solaris-bd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-09-29T16:42:40.397Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-29T16:42:40.398Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-29T16:42:40.824Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Wed, 29 Sep 2021 16:42:42 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-29T16:42:40.855Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/solaris-bd:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-09-29T16:42:42.438Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Sep 2021 16:42:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1299","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-29T16:42:42.439Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/solaris-bd  
+ 
+[debug] [2021-09-29T16:42:42.893Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Sep 2021 16:42:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-29T16:42:42.894Z] [WARNING] Unable to fetch default resources. Falling back to project id (solaris-bd)
+[info] 
+[info] === Deploying to 'solaris-bd'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-09-29T16:42:42.896Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/solaris-bd/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-09-29T16:42:45.093Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Sep 2021 16:42:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[solaris-bd]: beginning deploy... 
+[info] i  hosting[solaris-bd]: found 25 files in build 
+[debug] [2021-09-29T16:42:45.382Z] [hosting] hash cache [YnVpbGQ] stored for 25 files
+[debug] [2021-09-29T16:42:45.382Z] [hosting][hash queue][FINAL] {"max":274,"min":3,"avg":21.76,"active":0,"complete":25,"success":25,"errored":0,"retried":0,"total":25,"elapsed":278}
+[debug] [2021-09-29T16:42:45.382Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/solaris-bd/versions/ffa151fab3dbe88a:populateFiles  
+ <request body omitted>
+[debug] [2021-09-29T16:42:47.301Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Sep 2021 16:42:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-29T16:42:47.304Z] [hosting][populate queue][FINAL] {"max":1921,"min":1921,"avg":1921,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1923}
+[debug] [2021-09-29T16:42:47.304Z] [hosting] uploads queued: 10
+[debug] [2021-09-29T16:42:52.205Z] [hosting][upload queue][FINAL] {"max":4904,"min":1927,"avg":3361.8,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":4904}
+[info] +  hosting[solaris-bd]: file upload complete 
+[debug] [2021-09-29T16:42:52.206Z] [hosting] deploy completed after 7112ms
+[debug] [2021-09-29T16:42:52.494Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "solaris-bd"
+    },
+    "site": "solaris-bd",
+    "version": "sites/solaris-bd/versions/ffa151fab3dbe88a"
+  }
+]
+[info] i  hosting[solaris-bd]: finalizing version... 
+[debug] [2021-09-29T16:42:52.495Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/solaris-bd/versions/ffa151fab3dbe88a?updateMask=status  
+ {"status":"FINALIZED"}
