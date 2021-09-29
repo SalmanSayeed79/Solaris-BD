@@ -4,16 +4,16 @@ import {useHistory} from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu';
 
 
-export default function Appbar() {
+export default function Appbar(props) {
     const [active,setActive]=useState(0)
     const history=useHistory()
     const homeClick=()=>{
         setActive(0);
         history.push("/")
     }
-    const locationsClick=()=>{
+    const servicesClick=()=>{
         setActive(1);
-        history.push("/locations")
+        history.push("/choose")
     }
     const aboutClick=()=>{
         setActive(2);
@@ -27,9 +27,9 @@ export default function Appbar() {
             </Toolbar>
             <Box sx={{height:"7vh",display:"flex",alignItems:"center"}}>
                 <ButtonGroup variant="outlined" color="primary">
-                    {active==0 ? <Button variant="contained" onClick={homeClick}>Home</Button> : <Button variant="outlined" onClick={homeClick}>Home</Button>}
-                    {active==1 ? <Button variant="contained" onClick={locationsClick}>Locations</Button> : <Button variant="outlined" onClick={locationsClick}>Locations</Button>}
-                    {active==2 ? <Button variant="contained" onClick={aboutClick}>About</Button> : <Button variant="outlined" onClick={aboutClick}>About</Button>}
+                    {props.active==0 ? <Button variant="contained" onClick={homeClick}>Home</Button> : <Button variant="outlined" onClick={homeClick}>Home</Button>}
+                    {props.active==1 ? <Button variant="contained" onClick={servicesClick}>Services</Button> : <Button variant="outlined" onClick={servicesClick}>Services</Button>}
+                    {props.active==2 ? <Button variant="contained" onClick={aboutClick}>About</Button> : <Button variant="outlined" onClick={aboutClick}>About</Button>}
                     
                 </ButtonGroup> 
             </Box>

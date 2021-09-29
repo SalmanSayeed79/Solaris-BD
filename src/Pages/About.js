@@ -5,6 +5,7 @@ import Member from '../Components/Member'
 export default function About() {
     return (
     <Box>
+        <Appbar active={2}/>
         <Box sx={{backgroundColor:"primary.main",minWidth:"100vw",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
             <Typography fontFamily="Bree Serif" variant='h3' textAlign="center" color="primary.contrastText" sx={{marginBottom:"3vh",marginTop:{xs:"15vh",md:"3vh"},fontSize:{xs:"2rem",md:"3.5rem"}}} >Meet the team</Typography>
             <Paper elevation={10} sx={{minHeight:"70vh",width:"80vw",display:"flex",flexDirection:{xs:"column",md:"row"},flexWrap:"wrap",alignItems:"center",justifyContent:"space-around",marginBottom:"5vh"}}>
