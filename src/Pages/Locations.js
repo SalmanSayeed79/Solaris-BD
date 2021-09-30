@@ -1,9 +1,11 @@
 import React,{useState,useEffect} from 'react'
 import Appbar from '../Components/Appbar'
-import YearlyData from '../Components/YearlyData';
+import YearlySolar from './YearlySolar';
+import MonthlySolar from "./MonthlySolar"
+import MonthlyRain from "./MonthlyRain"
 import {useHistory} from 'react-router-dom'
 import { GoogleMap, LoadScript ,Marker, MarkerClusterer} from '@react-google-maps/api';
-import {Box, Typography,Button,Paper,TextField,AppBar,IconButton,Toolbar} from '@mui/material'
+import {Box, Typography,Button,Paper,ButtonGroup,AppBar,IconButton,Toolbar} from '@mui/material'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 //import MonthlyData from '../Hooks/MonthlyData'
 {/** Maps API Key */}
@@ -14,6 +16,8 @@ export default function Locations() {
     const [lat,setLat]=useState(23.8103)
     const [lng,setLng]=useState(90.4125)
     const [showData,setShowData]=useState(false)
+    const [showMonthlyData,setShowMonthlyData]=useState(false)
+    const [showYearlyData,setShowYearlyData]=useState(false)
     
     const containerStyle = {
         width: '90vw',
@@ -43,14 +47,20 @@ export default function Locations() {
         <AppBar color="default">
             <Toolbar>
                 <IconButton onClick={()=>{history.push("/choose")}}><ArrowBackIosIcon color="primary"/></IconButton>
-                <Typography fontFamily="Bree Serif" color="primary" fontSize="large">Choose your location</Typography>
+                {!showData && <Typography fontFamily="Bree Serif" color="primary" fontSize="large">Choose your location</Typography>}
+                {showMonthlyData && <Typography fontFamily="Bree Serif" color="primary" fontSize="large">Monthly Data</Typography>}
+                {showYearlyData && <Typography fontFamily="Bree Serif" color="primary" fontSize="large">Yearly Data</Typography>}
             </Toolbar>
         </AppBar>
         {!showData && <Box sx={{backgroundColor:"#f4f4f4",marginTop:"7vh",width:"100vw",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"flex-start"}}>
                 <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                   <Typography variant="h5" color="primary" fontFamily="Bree Serif" marginBottom="1vh" sx={{textAlign:"center"}}>Choose Your location on the map</Typography>
-                  <TextField id="outlined-basic" label="Latitude" variant="outlined" type="number" disabled value={lat}  sx={{marginTop:"5px"}}/>
-                  <TextField id="outlined-basic" label="Longitude" variant="outlined" type="number" disabled value={lng}  sx={{marginTop:"5px"}}/>
+                  <Typography variant="p" color="primary" fontFamily="Bree Serif" marginBottom="1vh" sx={{textAlign:"center"}}>Current Latitude</Typography>
+                  <Typography variant="p" fontFamily="Bree Serif" marginBottom="1vh" sx={{textAlign:"center", fontSize:"18px"}}>{lat}</Typography>
+            
+                  <Typography variant="p" color="primary" fontFamily="Bree Serif" marginBottom="1vh" sx={{textAlign:"center"}}>Current Longitude</Typography>
+                  <Typography variant="p" fontFamily="Bree Serif" marginBottom="1vh" sx={{textAlign:"center", fontSize:"18px"}}>{lng}</Typography>
+                  
                 </Paper>
                 <LoadScript
                     googleMapsApiKey="AIzaSyBO8Yh2KLflx9L2AyTseFOjeFGL2Wzu0kM"
@@ -83,12 +93,16 @@ export default function Locations() {
                     <Button variant="contained" sx={{marginTop:"3vh"}}>Get Data</Button>
                     </Box>
                 </Paper>*/}
-                <Button onClick={()=>setShowData(true)}  variant="contained" size="large" sx={{marginBottom:"10vh",marginTop:"50px"}}><Typography variant='p' sx={{fontSize:{xs:"1.4rem",md:"2rem"},}} fontFamily="Bree Serif" color="white">Get Data</Typography></Button>
-                
+                <ButtonGroup sx={{marginBottom:"5vh",orientation:{xs:"vertical",md:"horizontal"}}}>
+                  <Button onClick={()=>{setShowYearlyData(true);setShowData(true)}}  variant="contained" size="large" sx={{marginTop:"50px"}}><Typography variant='p' sx={{fontSize:{xs:"1rem",md:"1.5rem"},}} fontFamily="Bree Serif" color="white">Get Yearly Data</Typography></Button>
+                  <Button onClick={()=>{setShowMonthlyData(true);setShowData(true)}}  variant="contained" size="large" sx={{marginTop:"50px"}}><Typography variant='p' sx={{fontSize:{xs:"1rem",md:"1.5rem"},}} fontFamily="Bree Serif" color="white">Get Monthly Data</Typography></Button>
+    
+                </ButtonGroup>
 
                 
         </Box>}
-        {showData && <YearlyData />}
+        {showYearlyData && <YearlySolar lat={lat} lng={lng}/>}
+        {showMonthlyData && <MonthlyRain lat={lat} lng={lng}/>}
     </Box>
     )
 }

@@ -6,6 +6,8 @@ import Home from './Pages/Home'
 import Locations from './Pages/Locations'
 import About from './Pages/About'
 import Choose from './Pages/Choose'
+import MonthlySolar from './Pages/MonthlySolar'
+import YearlySolar from './Pages/YearlySolar'
 import Appbar from './Components/Appbar'
 const customTheme=createTheme({
   palette:{
@@ -32,6 +34,8 @@ function App() {
         <Route exact path="/locations" component={Locations}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/choose" component={Choose}/>
+        <Route exact path="/monthlySolar" component={MonthlySolar}/>
+        <Route exact path="/yearlySolar" component={YearlySolar}/>
       </Switch>
       </ThemeProvider>
     </BrowserRouter>
