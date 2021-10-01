@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import {Box, Typography,Paper, CircularProgress, TextField} from '@mui/material'
+import {Box, Typography,Paper, CircularProgress, TextField,Button} from '@mui/material'
 import {Line} from 'react-chartjs-2'
 
 export default function CustomData({lat,lng}) {
@@ -14,8 +14,8 @@ export default function CustomData({lat,lng}) {
     const [tempLabels,setTempLabels]=useState([])
     const [humidityLabels,setHumidityLabels]=useState([])
     const [windLabels,setWindLabels]=useState([])
-    const [startDate,setStartDate]=useState()
-    const [endDate,setEndDate]=useState()
+    const [startDate,setStartDate]=useState("20200101")
+    const [endDate,setEndDate]=useState("20201231")
     
     const [loading,setLoading]=useState(true)
 
@@ -126,7 +126,7 @@ export default function CustomData({lat,lng}) {
     }
 
     const getData=()=>{
-        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN,T2M,RH2M,PRECTOTCORR,WS10M&community=RE&longitude=${90.2}&latitude=${20.1}&format=JSON&start=20180101&end=20200101`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN,T2M,RH2M,PRECTOTCORR,WS10M&community=RE&longitude=${90.2}&latitude=${20.1}&format=JSON&start=${startDate}&end=${endDate}`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
@@ -185,12 +185,17 @@ export default function CustomData({lat,lng}) {
             {/*Sunlight* */}
             <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                 <Typography variant="h5" color="primary" fontFamily="Bree Serif" marginBottom="1vh" sx={{textAlign:"center"}}>Choose the date range</Typography>
-
-               
-                <TextField onChange={startDateChange} label="Starting Date" type="date"/>
-        
-          
-                <TextField onChange={endDateChange} label="Ending Date" type="date"/>
+                <TextField onChange={startDateChange} label="Starting Date" type="date" value={startDate} defaultValue={"2020-01-01"}/>
+                <TextField onChange={endDateChange} label="Ending Date" type="date" value={endDate} defaultValue={"2020-12-31"}/>
+                <Button onClick={()=>{
+                   
+                    let start = startDate.replaceAll("-","")
+                    let end = endDate.replaceAll("-","")
+                    // console.log(startDate)
+                    // console.log(start)
+                    setStartDate(start)
+                    setEndDate(end)
+                }}>Get Data</Button>
                 
             </Paper>
             {!loading && 

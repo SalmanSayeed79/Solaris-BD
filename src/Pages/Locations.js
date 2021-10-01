@@ -96,6 +96,7 @@ export default function Locations() {
                 <ButtonGroup sx={{marginBottom:"5vh",orientation:{xs:"vertical",md:"horizontal"}}}>
                   <Button onClick={()=>{setShowYearlyData(true);setShowData(true)}}  variant="contained" size="large" sx={{marginTop:"50px"}}><Typography variant='p' sx={{fontSize:{xs:"1rem",md:"1.5rem"},}} fontFamily="Bree Serif" color="white">Get Yearly Data</Typography></Button>
                   <Button onClick={()=>{setShowMonthlyData(true);setShowData(true)}}  variant="contained" size="large" sx={{marginTop:"50px"}}><Typography variant='p' sx={{fontSize:{xs:"1rem",md:"1.5rem"},}} fontFamily="Bree Serif" color="white">Get Monthly Data</Typography></Button>
+                  <Button onClick={()=>{setShowMonthlyData(true);setShowData(true)}}  variant="contained" size="large" sx={{marginTop:"50px"}}><Typography variant='p' sx={{fontSize:{xs:"1rem",md:"1.5rem"},}} fontFamily="Bree Serif" color="white">Custom Data</Typography></Button>
     
                 </ButtonGroup>
 

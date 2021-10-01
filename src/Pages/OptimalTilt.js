@@ -50,10 +50,10 @@ export default function OptimalTilt({lat,lng}) {
         <Box sx={{backgroundColor:"#f4f4f4",marginTop:"7vh",width:"100vw",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"flex-start"}}>
         {/**Detail */}
         <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
-            <Box>
+            <Box sx={{width:{xs:"75vw",md:"40vw"},display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",textAlign:"center"}}>
                 <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px",textAlign:"center"}}>Welcome to optimal tilt angle</Typography>
                 <Typography fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Sometimes plating a solar panel does not mean we are going to get most out of our solar panels. Tilting them at a particular angle goes a long way when it comes to gaining proper flow of energy. In this page we have porvided, through intricate calculation, a particular tilt angle that will provide the most efficient amount of solar energy in a particular location.</Typography>
-                <Box component="img" src={require("../Assets/SolarTilt.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"70vw"}}}></Box>
+                <Box component="img" src={require("../Assets/SolarTilt.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"30vw"}}}></Box>
             </Box>
         </Paper>
         {/*!loading && 

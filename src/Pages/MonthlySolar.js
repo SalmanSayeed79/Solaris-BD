@@ -369,16 +369,16 @@ export default function MonthlySolar({lat,lng}) {
         <Box sx={{backgroundColor:"#f4f4f4",marginTop:"7vh",width:"100vw",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"flex-start"}}>
             {/**Detail */}
             <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
-                <Box>
+                <Box sx={{width:{xs:"75vw",md:"40vw"},display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",textAlign:"center"}}>
                     <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px",textAlign:"center"}}>Welcome to monthly solar data</Typography>
                     <Typography fontFamily="Bree Serif" sx={{fontSize:"15px"}}>In this page you can get the amount of average solar energy in a particular month. We use a 5yr period to gather the average so you can get an idea how much energy you can expect. We also provide the amount of energy that can be saved by planting a 1m<sup>3</sup>solar panel in your location</Typography>
-                    <Box component="img" src={require("../Assets/Solar.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"70vw"}}}></Box>
+                    <Box component="img" src={require("../Assets/Solar.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"30vw"}}}></Box>
                 </Box>
             </Paper>
             {/*January* */}
             {!loading && 
                 <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
-                    <Box>
+                    <Box sx={{width:{xs:"75vw",md:"40vw"},display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",textAlign:"center"}}>
                         <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px"}}>January</Typography>
                         <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average power per day (KW hr) : </Typography>
                         <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(janData)}</Typography>

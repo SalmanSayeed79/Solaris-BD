@@ -212,10 +212,10 @@ export default function YearlyRain({lat,lng}) {
         */}
             {/**Detail */}
             <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
-                <Box>
+                <Box sx={{width:{xs:"75vw",md:"40vw"},display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",textAlign:"center"}}>
                     <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px",textAlign:"center"}}>Welcome to monthly historical rain data</Typography>
                     <Typography fontFamily="Bree Serif" sx={{fontSize:"15px"}}>In this page you can get the amount of average rain in a particular year. We use a 12 month period to gather the average so you can get an idea how much rain you can expect.</Typography>
-                    <Box component="img" src={require("../Assets/Rain.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"70vw"}}}></Box>
+                    <Box component="img" src={require("../Assets/Rain.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"30vw"}}}></Box>
                 </Box>
             </Paper>
             {/*2020* */}
