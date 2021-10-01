@@ -10,15 +10,14 @@ The services are :
     This services gives our users how much solar energy they can expect at a particular time by using NASA's POWER API and shows the users a monthly or yearly average sunlight value. Users can also get how much energy they can potentially save by placing a solar panel in their location
 - #### Optimal tilt angle
     This is the second service that "Solaris" provides to its users. Through this service a user can get the particular angle for setting up their solar panel. We take in consider all sorts of variables including cloud data, diffusion and other variants in our back-end and send that to our custom made REST API. Link to the backend can be found here [Backend Github](https://github.com/pptx704/solaris-backend)
-    We have also created a mobile app so that a user can place their phone on top of their solar panel and accurately tilt their solar panel with an intuitive UI. You can find the description of the app here [Solaris Mobile App]() and the github repo here [Solaris App Github](https://github.com/zarifikram/SOLARIS)
+    We have also created a mobile app so that a user can place their phone on top of their solar panel and accurately tilt their solar panel with an intuitive UI. You can find the description of the app here [Solaris Mobile App]() and the github repo here [Solaris Mobile App Github](https://github.com/zarifikram/SOLARIS)
 
 - #### Farming Service
-    Farmers are not that much knowledgeable when it comes to working with data. So solaris provides them wi
-    th the simplest form of data that they need. Instead of giving our users a bunch of unnecessary jibberish data, we just give them a basic verdict based on the range of the data. We provide a variety of data for farmers. These include :
-        - Temperature
-        - Rainfall
-        - Humidity
-        - Wind-speed
+    Farmers are not that much knowledgeable when it comes to working with data. So solaris provides them with the simplest form of data that they need. Instead of giving our users a bunch of unnecessary jibberish data, we just give them a basic verdict based on the range of the data. We provide a variety of data for farmers. These include :
+    - Temperature
+    - Rainfall
+    - Humidity
+    - Wind-speed
     We also have the option for getting detailed data for each category so that researchers and students can also use our service
 - #### Historical Rainfall Data
     Since rainfall data is something that is used in many research and study purpose, solaris also provides this service for its users. Users can get the rainfall data of any location around the world in the tip of their fingers.
@@ -29,11 +28,11 @@ You can visit the site here :  [Solaris:Changing the world ](https://solaris-bd.
 ## Challenges
 ---
 Around the globe energy deficiency is one of the most severe problems. Since because of globalization, it is impossible to prosper without the usage data. However, data is not accessible nor understandable to all of the population. Inaccessibility to solar data gives birth to a lot of challenges.
-##### Improper positioning of solar panels 
+#### Improper positioning of solar panels 
 Since not all places are good for planting solar panels, it is important to know before planting a solar panel in a particular location if that location is suitable for solar panels or not. But there exists no such system or software which can properly manage to do that
-##### Improper solar panel tilt
+#### Improper solar panel tilt
 Due to lack of knowledge and most of the data being either vauge or inaccessible, most users can't get much out of their expensive solar panels which drives a lot of people away from this sustainable source of energy
-##### Inaccessibility of farming data
+#### Inaccessibility of farming data
 Farmers are one of the most powerful driving forces of the world. But due to lack of knowledge, agriculture in most of the world is still underdeveloped. It takes a lot of wisdom to properly use the data provided in a fruitful way which most farmers are unable of doing. And adding to that, even agricultural researchers have hard time finding proper data for their research work as all the data are scattered everywhere
    
 ## Solution
@@ -66,12 +65,13 @@ The web-app version of "Solaris" has two parts
 
 Some of the note-worthy features of "Solaris" are :
 
-- Implementation of Java networking with TCP using socket
-- Implementing server
-- Multiple client
-- JavaFX based gui designed with material theme
-- Server side validation
-- Auto update of data
+- Functionallity to use any location of the world
+- Ability to attain solar data from NASA's POWER API
+- Showing average sunlight on a monthly and yearly basis
+- Calculating optimal tilt angle for a particular location 
+- Showing verdicts for farmers based on the value range 
+- Showing rainfall data 
+
 
 ### Desktop UI
 
@@ -128,3 +128,75 @@ Detailed View
 
 #### About Page
 [![2About.png](https://i.postimg.cc/5tbVhsv3/2About.png)](https://postimg.cc/YvnZgfdG)
+
+
+### Mobile UI
+
+#### Home Page
+
+[![IMG-1600.png](https://i.postimg.cc/QdB2vRH1/IMG-1600.png)](https://postimg.cc/Bj07K75n)
+
+#### Services Page
+
+[![IMG-1602.png](https://i.postimg.cc/HsnR7f0R/IMG-1602.png)](https://postimg.cc/D8VB9pMP)
+
+#### Solar Panel Data Page
+Select Location
+[![IMG-1603.png](https://i.postimg.cc/Bv9VktWf/IMG-1603.png)](https://postimg.cc/CR77fhLc)
+
+Yearly Data
+[![IMG-1604.png](https://i.postimg.cc/vmrNsMMg/IMG-1604.png)](https://postimg.cc/f3bKcGVD)
+
+[![IMG-1605.png](https://i.postimg.cc/1tyYRT5W/IMG-1605.png)](https://postimg.cc/cK5cXF3Y)
+
+Monthly Data
+
+[![IMG-1606.png](https://i.postimg.cc/zBp2yjyq/IMG-1606.png)](https://postimg.cc/BLLBy25z)
+
+[![IMG-1607.png](https://i.postimg.cc/pXmcdKRt/IMG-1607.png)](https://postimg.cc/56MS7YXP)
+
+[![IMG-1608.png](https://i.postimg.cc/3wTt96pK/IMG-1608.png)](https://postimg.cc/4YWvxWBM)
+
+#### Optimal Tilt Angle Page
+Choose Location
+[![IMG-1609.png](https://i.postimg.cc/zfF0QjST/IMG-1609.png)](https://postimg.cc/5HjBY8rt)
+
+Optimal Tilt Angle
+[![IMG-1610.png](https://i.postimg.cc/Tw2CvDCF/IMG-1610.png)](https://postimg.cc/Y4V11hcz)
+
+[![IMG-1611.png](https://i.postimg.cc/GtHKH10j/IMG-1611.png)](https://postimg.cc/4HRVSqxK)
+
+#### Farming Data Page
+Choose Location
+[![IMG-1612.png](https://i.postimg.cc/7YJX4DnH/IMG-1612.png)](https://postimg.cc/fJZY7GPp)
+
+Yearly Farming Data
+[![IMG-1613.png](https://i.postimg.cc/K8nNKNWC/IMG-1613.png)](https://postimg.cc/Snx83WkG)
+
+Basic View
+[![IMG-1614.png](https://i.postimg.cc/9XrpFjHn/IMG-1614.png)](https://postimg.cc/yWC9vtdm)
+
+Detailed View
+[![IMG-1615.png](https://i.postimg.cc/VspFJHYL/IMG-1615.png)](https://postimg.cc/nMKm52j6)
+
+Monthly Farming Data
+[![IMG-1616.png](https://i.postimg.cc/sgR9cQQk/IMG-1616.png)](https://postimg.cc/56nC9tmg)
+
+Basic View
+[![IMG-1617.png](https://i.postimg.cc/Zqb8GGLj/IMG-1617.png)](https://postimg.cc/xXZNHFhb)
+
+Detailed View
+[![IMG-1618.png](https://i.postimg.cc/fRwSyx0R/IMG-1618.png)](https://postimg.cc/56R2kQ3h)
+
+#### Historical Rainfall Data Page
+Choose Location
+[![IMG-1619.png](https://i.postimg.cc/DZb8H6RB/IMG-1619.png)](https://postimg.cc/r0MVt1Vr)
+
+Yearly Data
+[![IMG-1620.png](https://i.postimg.cc/hvBPwBLt/IMG-1620.png)](https://postimg.cc/sQTrQbHk)
+
+Monthly Data
+[![IMG-1621.png](https://i.postimg.cc/8kRCv7GJ/IMG-1621.png)](https://postimg.cc/G9prwhHd)
+
+#### About Page
+[![IMG-1601.png](https://i.postimg.cc/MHK45LCc/IMG-1601.png)](https://postimg.cc/ftpBT8TZ)
