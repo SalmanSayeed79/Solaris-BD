@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import {Box, Typography,Paper, CircularProgress} from '@mui/material'
 import {Bar} from 'react-chartjs-2'
 
-export default function YearlySolar({lat,lng}) {
+export default function YearlyRain({lat,lng}) {
     const [monthlyData,setMonthlyData]=useState([])
     const [monthlyData2021,setMonthlyData2021]=useState([])
     const [monthlyData2020,setMonthlyData2020]=useState([])
@@ -127,22 +127,22 @@ export default function YearlySolar({lat,lng}) {
     }
 
     const MonthlyData2020=()=>{
-        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2020&end=2020`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2020&end=2020`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
-          let allSky=data.properties.parameter.ALLSKY_SFC_SW_DWN
+          let allSky=data.properties.parameter.PRECTOTCORR
           let keys = Object.values(allSky)
           setMonthlyData2020(keys)
         })
         .catch((e)=>{console.log(e)})
     }
     const MonthlyData2019=()=>{
-        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2019&end=2019`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2019&end=2019`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
-          let allSky=data.properties.parameter.ALLSKY_SFC_SW_DWN
+          let allSky=data.properties.parameter.PRECTOTCORR
           let keys = Object.values(allSky)
           setMonthlyData2019(keys)
         })
@@ -150,33 +150,33 @@ export default function YearlySolar({lat,lng}) {
     }
    
     const MonthlyData2018=()=>{
-        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2018&end=2018`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2018&end=2018`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
-          let allSky=data.properties.parameter.ALLSKY_SFC_SW_DWN
+          let allSky=data.properties.parameter.PRECTOTCORR
           let keys = Object.values(allSky)
           setMonthlyData2018(keys)
         })
         .catch((e)=>{console.log(e)})
     }
     const MonthlyData2017=()=>{
-        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2017&end=2017`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2017&end=2017`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
-          let allSky=data.properties.parameter.ALLSKY_SFC_SW_DWN
+          let allSky=data.properties.parameter.PRECTOTCORR
           let keys = Object.values(allSky)
           setMonthlyData2017(keys)
         })
         .catch((e)=>{console.log(e)})
     }
     const MonthlyData2016=()=>{
-        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2016&end=2016`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR,CLRSKY_SFC_SW_DWN&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2016&end=2016`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
-          let allSky=data.properties.parameter.ALLSKY_SFC_SW_DWN
+          let allSky=data.properties.parameter.PRECTOTCORR
           let keys = Object.values(allSky)
           setMonthlyData2016(keys)
           setLoading(false)
@@ -215,11 +215,11 @@ export default function YearlySolar({lat,lng}) {
                 <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                     <Box>
                         <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px"}}>2020</Typography>
-                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average power per day (KW hr) : </Typography>
-                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2020)}</Typography>
+                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average rain per day (mm) : </Typography>
+                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2020)} mm</Typography>
 
-                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated energy Saved : </Typography>
-                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2020))} Units</Typography>
+                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated rain that year : </Typography>
+                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2020))} mm</Typography>
                     </Box>
                     <Bar className="lineChart"
                     style={{maxHeight:"30vh",maxWidth:"70vw" }}

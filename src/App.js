@@ -4,6 +4,7 @@ import {createTheme} from '@mui/material/styles'
 import orange from '@mui/material/colors/orange'
 import Home from './Pages/Home'
 import Locations from './Pages/Locations'
+import FarmingLocation from './Pages/FarmingLocation'
 import About from './Pages/About'
 import Choose from './Pages/Choose'
 import MonthlySolar from './Pages/MonthlySolar'
@@ -32,6 +33,7 @@ function App() {
       <Switch> 
         <Route exact path="/" component={Home} />
         <Route exact path="/locations" component={Locations}/>
+        <Route exact path="/farmingLocation" component={FarmingLocation}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/choose" component={Choose}/>
         <Route exact path="/monthlySolar" component={MonthlySolar}/>

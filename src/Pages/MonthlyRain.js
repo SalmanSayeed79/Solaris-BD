@@ -243,7 +243,7 @@ export default function MonthlyRain({lat,lng}) {
     }
 
     const getData=()=>{
-        const url=`https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2020&end=2020`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2020&end=2020`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
@@ -267,7 +267,7 @@ export default function MonthlyRain({lat,lng}) {
 
     }
     const getData2019=()=>{
-        const url=`https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2019&end=2019`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2019&end=2019`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
@@ -290,7 +290,7 @@ export default function MonthlyRain({lat,lng}) {
     }
    
     const getData2018=()=>{
-        const url=`https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2018&end=2018`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2018&end=2018`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
@@ -312,7 +312,7 @@ export default function MonthlyRain({lat,lng}) {
         .catch((e)=>{console.log(e)})
     }
     const getData2017=()=>{
-        const url=`https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2017&end=2017`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2017&end=2017`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
@@ -334,7 +334,7 @@ export default function MonthlyRain({lat,lng}) {
         .catch((e)=>{console.log(e)})
     }
     const getData2016=()=>{
-        const url=`https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2016&end=2016`
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/monthly/point?parameters=PRECTOTCORR&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=2016&end=2016`
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{

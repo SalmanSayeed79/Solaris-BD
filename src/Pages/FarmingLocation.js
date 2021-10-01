@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Appbar from '../Components/Appbar'
-import YearlySolar from './YearlySolar';
+import YearlyRain from './YearlyRain';
 import MonthlySolar from "./MonthlySolar"
 import MonthlyRain from "./MonthlyRain"
 import {useHistory} from 'react-router-dom'
@@ -11,7 +11,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 {/** Maps API Key */}
 {/** AIzaSyBO8Yh2KLflx9L2AyTseFOjeFGL2Wzu0kM */}
 
-export default function Locations() {
+export default function FarmingLocation() {
     const history=useHistory()
     const [lat,setLat]=useState(23.8103)
     const [lng,setLng]=useState(90.4125)
@@ -101,8 +101,8 @@ export default function Locations() {
 
                 
         </Box>}
-        {showYearlyData && <YearlySolar lat={lat} lng={lng}/>}
-        {showMonthlyData && <MonthlySolar lat={lat} lng={lng}/>}
+        {showYearlyData && <YearlyRain lat={lat} lng={lng}/>}
+        {showMonthlyData && <MonthlyRain lat={lat} lng={lng}/>}
     </Box>
     )
 }
