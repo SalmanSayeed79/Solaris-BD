@@ -4,6 +4,7 @@ import {createTheme} from '@mui/material/styles'
 import orange from '@mui/material/colors/orange'
 import Home from './Pages/Home'
 import Locations from './Pages/Locations'
+import TiltLocation from './Pages/TiltLocation'
 import ChooseFarming from './Pages/ChooseFarming'
 import FarmingBasicLocation from './Pages/FarmingBasicLocation'
 import FarmingDetailedLocation from './Pages/FarmingDetailedLocation'
@@ -23,6 +24,15 @@ const customTheme=createTheme({
     },
     success:{
       main:"#f4f4f4"
+    },
+    green:{
+      main:"#4caf50"
+    },
+    red:{
+      main:"#f44336"
+    },
+    yellow:{
+      main:"#ffc107"
     }
   }
 
@@ -39,6 +49,7 @@ function App() {
         <Route exact path="/precipitationLocation" component={PrecipitationLocation}/>
         <Route exact path="/farmingbasicLocation" component={FarmingBasicLocation}/>
         <Route exact path="/farmingDetailedLocation" component={FarmingDetailedLocation}/>
+        <Route exact path="/TiltLocation" component={TiltLocation}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/choose" component={Choose}/>
         <Route exact path="/chooseFarming" component={ChooseFarming}/>
