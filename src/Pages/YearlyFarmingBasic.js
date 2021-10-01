@@ -198,7 +198,7 @@ export default function YearlyFarmingBasic({lat,lng}) {
     }
     const humidityDefine=(hum)=>{
         if(hum<30){return "Dry"}
-        else if(hum<70){return "Moderate Humidity"}
+        else if(hum<70){return "Moderately Humid"}
         else{return "Wet"}
     }
     return (
