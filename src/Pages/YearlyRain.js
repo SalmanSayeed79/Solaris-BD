@@ -201,11 +201,11 @@ export default function YearlyRain({lat,lng}) {
             <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                 <Box>
                     <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px"}}>2016 - 2020 </Typography>
-                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average power per day (KW hr) : </Typography>
+                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average rain per day (mm) : </Typography>
                     <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{removeDecimal(parseFloat((getAvg(monthlyData2020)+getAvg(monthlyData2020)+getAvg(monthlyData2019)+getAvg(monthlyData2018)+getAvg(monthlyData2017)+getAvg(monthlyData2016))/5))}</Typography>
 
-                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated energy Saved : </Typography>
-                    <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{removeDecimal(parseFloat((getYearlyUnits(getAvg(monthlyData2020))+getYearlyUnits(getAvg(monthlyData2019))+getYearlyUnits(getAvg(monthlyData2018))+getYearlyUnits(getAvg(monthlyData2017))+getYearlyUnits(getAvg(monthlyData2016)))/5))} Units</Typography>
+                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated rain that year : </Typography>
+                    <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{removeDecimal(parseFloat((getYearlyUnits(getAvg(monthlyData2020))+getYearlyUnits(getAvg(monthlyData2019))+getYearlyUnits(getAvg(monthlyData2018))+getYearlyUnits(getAvg(monthlyData2017))+getYearlyUnits(getAvg(monthlyData2016)))/5))} mm</Typography>
                 </Box>
                 
             </Paper>
@@ -257,11 +257,11 @@ export default function YearlyRain({lat,lng}) {
                 <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                 <Box>
                     <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px"}}>2019</Typography>
-                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average power per day (KW hr) : </Typography>
-                    <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2019)}</Typography>
+                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average rain per day (mm) : </Typography>
+                    <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2019)} mm</Typography>
 
-                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated energy Saved : </Typography>
-                    <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2019))} Units</Typography>
+                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated rain that year : </Typography>
+                    <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2019))} mm</Typography>
                 </Box>
                     <Bar className="lineChart"
                     style={{maxHeight:"30vh",maxWidth:"70vw" }}
@@ -299,11 +299,11 @@ export default function YearlyRain({lat,lng}) {
                 <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                     <Box>
                         <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px"}}>2018</Typography>
-                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average power per day (KW hr) : </Typography>
-                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2018)}</Typography>
+                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average rain per day (mm) : </Typography>
+                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2018)} mm</Typography>
 
-                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated energy Saved : </Typography>
-                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2018))} Units</Typography>
+                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated rain that year : </Typography>
+                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2018))} mm</Typography>
                     </Box>
                     <Bar className="lineChart"
                     style={{maxHeight:"30vh",maxWidth:"70vw" }}
@@ -341,11 +341,11 @@ export default function YearlyRain({lat,lng}) {
                 <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                     <Box>
                         <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px"}}>2017</Typography>
-                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average power per day (KW hr) : </Typography>
-                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2017)}</Typography>
+                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average rain per day (mm) : </Typography>
+                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2017)} mm</Typography>
 
-                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated energy Saved : </Typography>
-                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2017))} Units</Typography>
+                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated rain that year : </Typography>
+                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2017))} mm</Typography>
                     </Box>
                     <Bar className="lineChart"
                     style={{maxHeight:"30vh",maxWidth:"70vw" }}
@@ -383,11 +383,11 @@ export default function YearlyRain({lat,lng}) {
                 <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                     <Box>
                         <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px"}}>2016</Typography>
-                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average power per day (KW hr) : </Typography>
-                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2016)}</Typography>
+                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Average rain per day (mm) : </Typography>
+                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getAvg(monthlyData2016)} mm</Typography>
 
-                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated energy Saved : </Typography>
-                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2016))} Units</Typography>
+                        <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Estimated rain that year : </Typography>
+                        <Typography fontFamily="Bree Serif" sx={{fontSize:"30px"}}>{getYearlyUnits(getAvg(monthlyData2016))} mm</Typography>
                     </Box>
                     <Bar className="lineChart"
                     style={{maxHeight:"30vh",maxWidth:"70vw" }}

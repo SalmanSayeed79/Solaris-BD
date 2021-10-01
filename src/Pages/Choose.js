@@ -19,6 +19,7 @@ export default function Choose() {
                 <Button onClick={()=>{history.push("/locations")}} variant="contained" color="success" size="large" sx={{marginTop:"2rem"}}><Typography variant='h5' sx={{fontSize:{xs:"1.4rem",md:"2rem"}}} fontFamily="Bree Serif" color="#ff9800">Solar Panel Data</Typography></Button>
                 <Button onClick={()=>{}} variant="contained" color="success" size="large" sx={{marginTop:"2rem"}}><Typography variant='h5' sx={{fontSize:{xs:"1.4rem",md:"2rem"}}} fontFamily="Bree Serif" color="#ff9800">Solar Panel Tilt Angle</Typography></Button>
                 <Button onClick={()=>{history.push("/farmingLocation")}} variant="contained" color="success" size="large" sx={{marginTop:"2rem"}}><Typography variant='h5' sx={{fontSize:{xs:"1.4rem",md:"2rem"}}} fontFamily="Bree Serif" color="#ff9800">Farming Data</Typography></Button>
+                <Button onClick={()=>{history.push("/precipitationLocation")}} variant="contained" color="success" size="large" sx={{marginTop:"2rem"}}><Typography variant='h5' sx={{fontSize:{xs:"1.4rem",md:"2rem"}}} fontFamily="Bree Serif" color="#ff9800">Historical Rainfall Data</Typography></Button>
          
             </Box>
         </Box>
