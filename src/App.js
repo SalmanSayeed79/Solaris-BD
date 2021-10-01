@@ -4,7 +4,9 @@ import {createTheme} from '@mui/material/styles'
 import orange from '@mui/material/colors/orange'
 import Home from './Pages/Home'
 import Locations from './Pages/Locations'
-import FarmingLocation from './Pages/FarmingLocation'
+import ChooseFarming from './Pages/ChooseFarming'
+import FarmingBasicLocation from './Pages/FarmingBasicLocation'
+import FarmingDetailedLocation from './Pages/FarmingDetailedLocation'
 import PrecipitationLocation from './Pages/PrecipitationLocation'
 import About from './Pages/About'
 import Choose from './Pages/Choose'
@@ -35,9 +37,11 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/locations" component={Locations}/>
         <Route exact path="/precipitationLocation" component={PrecipitationLocation}/>
-        <Route exact path="/farmingLocation" component={FarmingLocation}/>
+        <Route exact path="/farmingbasicLocation" component={FarmingBasicLocation}/>
+        <Route exact path="/farmingDetailedLocation" component={FarmingDetailedLocation}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/choose" component={Choose}/>
+        <Route exact path="/chooseFarming" component={ChooseFarming}/>
         <Route exact path="/monthlySolar" component={MonthlySolar}/>
         <Route exact path="/yearlySolar" component={YearlySolar}/>
       </Switch>
