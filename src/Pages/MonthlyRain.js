@@ -367,6 +367,14 @@ export default function MonthlyRain({lat,lng}) {
 
     return (
         <Box sx={{backgroundColor:"#f4f4f4",marginTop:"7vh",width:"100vw",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"flex-start"}}>
+            {/**Detail */}
+            <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
+                <Box>
+                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px",textAlign:"center"}}>Welcome to monthly historical rain data</Typography>
+                    <Typography fontFamily="Bree Serif" sx={{fontSize:"15px"}}>In this page you can get the amount of average rain in a particular month. We use a 5yr period to gather the average so you can get an idea how much rain you can expect.</Typography>
+                    <Box component="img" src={require("../Assets/Rain.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"70vw"}}}></Box>
+                </Box>
+            </Paper>
             {/*January* */}
             {!loading && 
                 <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>

@@ -216,7 +216,14 @@ export default function YearlyFarmingBasic({lat,lng}) {
                 
             </Paper>
         */}
-
+            {/**Detail */}
+            <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
+                <Box>
+                    <Typography color="primary" fontFamily="Bree Serif" sx={{fontSize:"25px",textAlign:"center"}}>Welcome to yearly farming data</Typography>
+                    <Typography fontFamily="Bree Serif" sx={{fontSize:"15px"}}>Farmers are not particularly knowledgeable when it comes to working with data in particular. This is why we have two types of data in this page. One is a basic verdict on the weather and the other is a detailed version for students and researchers. In this page we are showing the amount of average rain, temperature, humidity, wind in a yearly average value.</Typography>
+                    <Box component="img" src={require("../Assets/Farming.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"70vw"}}}></Box>
+                </Box>
+            </Paper>
 
              {!loading &&
             <Box sx={{marginTop:"5vh",display:"flex",alignItems:"center"}}>
