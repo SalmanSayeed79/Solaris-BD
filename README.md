@@ -133,16 +133,16 @@ Detailed View
 
 ### Resources
 ---
-Solaris web app : [Solaris web homepage](https://solaris-bd.web.app/)
-Solaris web app repo : [Github repo for Solaris web app](https://github.com/SalmanSayeed79/Solaris-BD)
-Solaris Mobile app : [Apk drive link](https://drive.google.com/file/d/170HMrigXFpZwzHW3F4FIAJt-gC9HfU5Z/view?usp=sharing)
-Solaris Mobile app repo: [Github repo for solaris mobile app](https://github.com/zarifikram/SOLARIS)
-Solaris IOT module : [Github repo for Solaris IOT code](https://github.com/pptx704/solaris-servo-control)
+* Solaris web app : [Solaris web homepage](https://solaris-bd.web.app/)
+* Solaris web app repo : [Github repo for Solaris web app](https://github.com/SalmanSayeed79/Solaris-BD)
+* Solaris Mobile app : [Apk drive link](https://drive.google.com/file/d/170HMrigXFpZwzHW3F4FIAJt-gC9HfU5Z/view?usp=sharing)
+* Solaris Mobile app repo: [Github repo for solaris mobile app](https://github.com/zarifikram/SOLARIS)
+* Solaris IOT module : [Github repo for Solaris IOT code](https://github.com/pptx704/solaris-servo-control)
 
 ### Reference
 ---
-NASA POWER API Homepage : [NASA POWER API](https://power.larc.nasa.gov/)
-Google Maps API : [Google Maps homepage](https://developers.google.com/maps)
-Flutter : [Flutter homepage](https://developers.google.com/maps)
-Firebase : [Firebase homepage](https://firebase.google.com/)
-Chart JS : [Chart JS homepage](https://www.chartjs.org/)
+* NASA POWER API Homepage : [NASA POWER API](https://power.larc.nasa.gov/)
+* Google Maps API : [Google Maps homepage](https://developers.google.com/maps)
+* Flutter : [Flutter homepage](https://developers.google.com/maps)
+* Firebase : [Firebase homepage](https://firebase.google.com/)
+* Chart JS : [Chart JS homepage](https://www.chartjs.org/)
