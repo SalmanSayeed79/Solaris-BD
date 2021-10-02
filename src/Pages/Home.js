@@ -14,15 +14,7 @@ export default function Home() {
                 <Box component="img" src={require("../Assets/Home.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"70vw"}}}></Box>
                 
         </Box>
-        <Box sx={{backgroundColor:"#f4f4f4",marginTop:"7vh",minWidth:"100vw",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
-                <Typography fontFamily="Bree Serif" variant='h3' textAlign="center" color="primary" sx={{marginBottom:"3vh",fontSize:{xs:"2rem",md:"3rem"}}} >Technologies we used </Typography>
-                <Box>
-                
-                
-                </Box>
-                <Box component="img" src={require("../Assets/Home.png").default} sx={{marginTop:"5vh", width:{xs:"90vw",md:"70vw"}}}></Box>
-                
-        </Box>
+     
        
        </Box>
     )

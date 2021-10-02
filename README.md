@@ -73,130 +73,75 @@ Some of the note-worthy features of "Solaris" are :
 - Showing rainfall data 
 
 
-### Desktop UI
+### Desktop and mobile UI
 
 #### Home Page
 
-[![1Home.png](https://i.postimg.cc/d1V5dCPv/1Home.png)](https://postimg.cc/d7gRcLVS)
+[![1.png](https://i.postimg.cc/d1hY3JC4/1.png)](https://postimg.cc/34Q6b5nv)
 
 #### Services Page
 
-[![3-Services.png](https://i.postimg.cc/4yrPrFKN/3-Services.png)](https://postimg.cc/D4P1G6dt)
+[![3.png](https://i.postimg.cc/mgLKhbfC/3.png)](https://postimg.cc/ppSs6MdL)
 
 #### Solar Panel Data Page
 Select Location
-[![4-Solar-Location.png](https://i.postimg.cc/w385WyP1/4-Solar-Location.png)](https://postimg.cc/H8z7nxTm)
+[![4.png](https://i.postimg.cc/65YYjng4/4.png)](https://postimg.cc/pp5fyh2P)
 
 Yearly Data
-[![Desktop-Screenshot-2021-10-02-03-54-50-55.png](https://i.postimg.cc/MGPF95YX/Desktop-Screenshot-2021-10-02-03-54-50-55.png)](https://postimg.cc/xkm5CKhS)
+[![5.png](https://i.postimg.cc/g0vh5Pjt/5.png)](https://postimg.cc/XZYXGmw9)
 
-[![Desktop-Screenshot-2021-10-02-03-54-59-71.png](https://i.postimg.cc/xCBF2dh2/Desktop-Screenshot-2021-10-02-03-54-59-71.png)](https://postimg.cc/sQ9JP336)
+[![6.png](https://i.postimg.cc/zGYXQHh5/6.png)](https://postimg.cc/SJVh2sVt)
 
 Monthly Data
 
-[![Desktop-Screenshot-2021-10-02-03-55-12-79.png](https://i.postimg.cc/yxqnGb36/Desktop-Screenshot-2021-10-02-03-55-12-79.png)](https://postimg.cc/G8Qk8zj6)
+[![7.png](https://i.postimg.cc/7L66187T/7.png)](https://postimg.cc/NK3BYndg)
 
-[![Desktop-Screenshot-2021-10-02-03-55-21-90.png](https://i.postimg.cc/MHytJm17/Desktop-Screenshot-2021-10-02-03-55-21-90.png)](https://postimg.cc/BPn2xDYb)
+[![8.png](https://i.postimg.cc/x1dYhGdw/8.png)](https://postimg.cc/nCN6QDB2)
 
 #### Optimal Tilt Angle Page
 Choose Location
-[![Desktop-Screenshot-2021-10-02-03-55-41-60.png](https://i.postimg.cc/pdpZLHDX/Desktop-Screenshot-2021-10-02-03-55-41-60.png)](https://postimg.cc/SXb8gHTw)
+[![9.png](https://i.postimg.cc/655DpWNR/9.png)](https://postimg.cc/DmHCCK0y)
 
 Optimal Tilt Angle
-[![Desktop-Screenshot-2021-10-02-03-55-53-96.png](https://i.postimg.cc/V6tWXWGx/Desktop-Screenshot-2021-10-02-03-55-53-96.png)](https://postimg.cc/ZBTNSphH)
+[![10.png](https://i.postimg.cc/bJm9CjFc/10.png)](https://postimg.cc/k6tSGLmf)
 
-[![Desktop-Screenshot-2021-10-02-03-56-21-28.png](https://i.postimg.cc/MH8b5fgv/Desktop-Screenshot-2021-10-02-03-56-21-28.png)](https://postimg.cc/S2DMNRSh)
+[![11.png](https://i.postimg.cc/c6ygT9ZG/11.png)](https://postimg.cc/hQstt0f2)
 
 #### Farming Data Page
 Choose Location
-[![Desktop-Screenshot-2021-10-02-03-56-29-43.png](https://i.postimg.cc/rFfx0Hyd/Desktop-Screenshot-2021-10-02-03-56-29-43.png)](https://postimg.cc/GHsH6qyr)
-
-Monthly Farming Data
-[![Desktop-Screenshot-2021-10-02-03-56-36-86.png](https://i.postimg.cc/L8hfzVhx/Desktop-Screenshot-2021-10-02-03-56-36-86.png)](https://postimg.cc/4YkmGV6c)
+[![12.png](https://i.postimg.cc/PrY2H0CZ/12.png)](https://postimg.cc/GH3kJ7Jh)
 
 Yearly Farming Data
-[![Desktop-Screenshot-2021-10-02-04-05-39-65.png](https://i.postimg.cc/rs3T7cC0/Desktop-Screenshot-2021-10-02-04-05-39-65.png)](https://postimg.cc/D4rRb9Nn)
-
-Basic View
-[![Desktop-Screenshot-2021-10-02-03-56-45-07.png](https://i.postimg.cc/q733FMsn/Desktop-Screenshot-2021-10-02-03-56-45-07.png)](https://postimg.cc/2qCybYX8)
-
-Detailed View
-[![Desktop-Screenshot-2021-10-02-03-56-53-46.png](https://i.postimg.cc/8PXfPrwM/Desktop-Screenshot-2021-10-02-03-56-53-46.png)](https://postimg.cc/1f63vXk3)
-
-#### Historical Rainfall Data Page
-[![Desktop-Screenshot-2021-10-02-03-57-04-77.png](https://i.postimg.cc/K8nbp6Kj/Desktop-Screenshot-2021-10-02-03-57-04-77.png)](https://postimg.cc/YvqThyzB)
-
-#### About Page
-[![2About.png](https://i.postimg.cc/5tbVhsv3/2About.png)](https://postimg.cc/YvnZgfdG)
-
-
-### Mobile UI
-
-#### Home Page
-
-[![IMG-1600.png](https://i.postimg.cc/QdB2vRH1/IMG-1600.png)](https://postimg.cc/Bj07K75n)
-
-#### Services Page
-
-[![IMG-1602.png](https://i.postimg.cc/HsnR7f0R/IMG-1602.png)](https://postimg.cc/D8VB9pMP)
-
-#### Solar Panel Data Page
-Select Location
-[![IMG-1603.png](https://i.postimg.cc/Bv9VktWf/IMG-1603.png)](https://postimg.cc/CR77fhLc)
-
-Yearly Data
-[![IMG-1604.png](https://i.postimg.cc/vmrNsMMg/IMG-1604.png)](https://postimg.cc/f3bKcGVD)
-
-[![IMG-1605.png](https://i.postimg.cc/1tyYRT5W/IMG-1605.png)](https://postimg.cc/cK5cXF3Y)
-
-Monthly Data
-
-[![IMG-1606.png](https://i.postimg.cc/zBp2yjyq/IMG-1606.png)](https://postimg.cc/BLLBy25z)
-
-[![IMG-1607.png](https://i.postimg.cc/pXmcdKRt/IMG-1607.png)](https://postimg.cc/56MS7YXP)
-
-[![IMG-1608.png](https://i.postimg.cc/3wTt96pK/IMG-1608.png)](https://postimg.cc/4YWvxWBM)
-
-#### Optimal Tilt Angle Page
-Choose Location
-[![IMG-1609.png](https://i.postimg.cc/zfF0QjST/IMG-1609.png)](https://postimg.cc/5HjBY8rt)
-
-Optimal Tilt Angle
-[![IMG-1610.png](https://i.postimg.cc/Tw2CvDCF/IMG-1610.png)](https://postimg.cc/Y4V11hcz)
-
-[![IMG-1611.png](https://i.postimg.cc/GtHKH10j/IMG-1611.png)](https://postimg.cc/4HRVSqxK)
-
-#### Farming Data Page
-Choose Location
-[![IMG-1612.png](https://i.postimg.cc/7YJX4DnH/IMG-1612.png)](https://postimg.cc/fJZY7GPp)
-
-Yearly Farming Data
-[![IMG-1613.png](https://i.postimg.cc/K8nNKNWC/IMG-1613.png)](https://postimg.cc/Snx83WkG)
-
-Basic View
-[![IMG-1614.png](https://i.postimg.cc/9XrpFjHn/IMG-1614.png)](https://postimg.cc/yWC9vtdm)
-
-Detailed View
-[![IMG-1615.png](https://i.postimg.cc/VspFJHYL/IMG-1615.png)](https://postimg.cc/nMKm52j6)
+[![13.png](https://i.postimg.cc/Ls6TzXNB/13.png)](https://postimg.cc/PC9YHtGP)
 
 Monthly Farming Data
-[![IMG-1616.png](https://i.postimg.cc/sgR9cQQk/IMG-1616.png)](https://postimg.cc/56nC9tmg)
+[![16.png](https://i.postimg.cc/J0mtkyQR/16.png)](https://postimg.cc/CBPFyxt2)
 
 Basic View
-[![IMG-1617.png](https://i.postimg.cc/Zqb8GGLj/IMG-1617.png)](https://postimg.cc/xXZNHFhb)
+[![14.png](https://i.postimg.cc/FzsNv0Zk/14.png)](https://postimg.cc/nj56YjNn)
 
 Detailed View
-[![IMG-1618.png](https://i.postimg.cc/fRwSyx0R/IMG-1618.png)](https://postimg.cc/56R2kQ3h)
+[![15.png](https://i.postimg.cc/ZnggQNDS/15.png)](https://postimg.cc/q6sjhNTb)
 
 #### Historical Rainfall Data Page
-Choose Location
-[![IMG-1619.png](https://i.postimg.cc/DZb8H6RB/IMG-1619.png)](https://postimg.cc/r0MVt1Vr)
-
-Yearly Data
-[![IMG-1620.png](https://i.postimg.cc/hvBPwBLt/IMG-1620.png)](https://postimg.cc/sQTrQbHk)
-
-Monthly Data
-[![IMG-1621.png](https://i.postimg.cc/8kRCv7GJ/IMG-1621.png)](https://postimg.cc/G9prwhHd)
+[![17.png](https://i.postimg.cc/CKPW89H5/17.png)](https://postimg.cc/06SWRW41)
 
 #### About Page
-[![IMG-1601.png](https://i.postimg.cc/MHK45LCc/IMG-1601.png)](https://postimg.cc/ftpBT8TZ)
+[![2.png](https://i.postimg.cc/YqQ0xzPM/2.png)](https://postimg.cc/QHxj81sy)
+
+
+
+### Resources
+---
+Solaris web app : [Solaris web homepage](https://solaris-bd.web.app/)
+Solaris web app repo : [Github repo for Solaris web app](https://github.com/SalmanSayeed79/Solaris-BD)
+Solaris Mobile app : [Github repo for solaris mobile app](https://github.com/zarifikram/SOLARIS)
+Solaris IOT module : [Github repo for Solaris IOT code]()
+
+### Reference
+---
+NASA POWER API Homepage : [NASA POWER API](https://power.larc.nasa.gov/)
+Google Maps API : [Google Maps homepage](https://developers.google.com/maps)
+Flutter : [Flutter homepage](https://developers.google.com/maps)
+Firebase : [Firebase homepage](https://firebase.google.com/)
+Chart JS : [Chart JS homepage](https://www.chartjs.org/)

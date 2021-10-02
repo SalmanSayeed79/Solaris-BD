@@ -14,10 +14,13 @@ export default function CustomData({lat,lng}) {
     const [tempLabels,setTempLabels]=useState([])
     const [humidityLabels,setHumidityLabels]=useState([])
     const [windLabels,setWindLabels]=useState([])
-    const [startDate,setStartDate]=useState("20200101")
-    const [endDate,setEndDate]=useState("20201231")
+    const [startDate,setStartDate]=useState("2018-01-01")
+    const [endDate,setEndDate]=useState("2019-01-01")
+    const [startDateUrl,setStartDateUrl]=useState(null)
+    const [endDateUrl,setEndDateUrl]=useState(null)
     
     const [loading,setLoading]=useState(true)
+    const [dataClicked,setDataClicked]=useState(false)
 
     const sunChart = {
         labels: sunLabels,
@@ -126,7 +129,15 @@ export default function CustomData({lat,lng}) {
     }
 
     const getData=()=>{
-        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN,T2M,RH2M,PRECTOTCORR,WS10M&community=RE&longitude=${90.2}&latitude=${20.1}&format=JSON&start=${startDate}&end=${endDate}`
+        let start = parseInt(startDate.replaceAll("-",""))
+        let end = parseInt(endDate.replaceAll("-",""))
+        // console.log(startDate)
+        console.log("start",start)
+        setStartDateUrl(start)
+        setEndDateUrl(end)
+        
+        const url=`https://rafeedbhuiyan17.pythonanywhere.com/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN,T2M,RH2M,PRECTOTCORR,WS10M&community=RE&longitude=${lng}&latitude=${lat}&format=JSON&start=${startDateUrl}&end=${endDateUrl}`
+        console.log(url)
         setLoading(true)
         fetch (url).then(res=>res.json())
         .then(data=>{
@@ -169,6 +180,12 @@ export default function CustomData({lat,lng}) {
     }
     
     useEffect(()=>{
+        let start = parseInt(startDate.replaceAll("-",""))
+        let end = parseInt(endDate.replaceAll("-",""))
+        // console.log(startDate)
+        console.log("start",start)
+        setStartDateUrl(start)
+        setEndDateUrl(end)
         getData()
     }, [])
 
@@ -185,16 +202,13 @@ export default function CustomData({lat,lng}) {
             {/*Sunlight* */}
             <Paper sx={{width:"85vw",minHeight:"5vh",display:"flex",flexDirection:{xs:"column",md:"row"},alignItems:"center",justifyContent:"space-around",padding:"1rem",marginTop:"5vh",marginBottom:"3vh"}}>
                 <Typography variant="h5" color="primary" fontFamily="Bree Serif" marginBottom="1vh" sx={{textAlign:"center"}}>Choose the date range</Typography>
-                <TextField onChange={startDateChange} label="Starting Date" type="date" value={startDate} defaultValue={"2020-01-01"}/>
-                <TextField onChange={endDateChange} label="Ending Date" type="date" value={endDate} defaultValue={"2020-12-31"}/>
+                <TextField onChange={startDateChange} label="Starting Date" type="date" value={startDate}/>
+                <TextField onChange={endDateChange} label="Ending Date" type="date" value={endDate} />
                 <Button onClick={()=>{
-                   
-                    let start = startDate.replaceAll("-","")
-                    let end = endDate.replaceAll("-","")
-                    // console.log(startDate)
-                    // console.log(start)
-                    setStartDate(start)
-                    setEndDate(end)
+                
+                    setDataClicked(!dataClicked)
+                    setLoading(true)
+                    getData()
                 }}>Get Data</Button>
                 
             </Paper>
@@ -228,6 +242,11 @@ export default function CustomData({lat,lng}) {
                                     display:false
                                 },   
                             }]
+                        },
+                        plugins: {
+                            legend: {
+                            display: false
+                            }
                         }
                     }}
 
@@ -385,7 +404,7 @@ export default function CustomData({lat,lng}) {
                 </Paper>
             }
            
-            {loading && <Box sx={{height:"93vh",width:"100vw",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}><CircularProgress color="primary"/><Typography fontFamily="Bree Serif" sx={{fontSize:"20px"}} color="primary">Loading Monthly Data</Typography></Box>}
+            {loading && <Box sx={{height:"93vh",width:"100vw",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}><CircularProgress color="primary"/><Typography fontFamily="Bree Serif" sx={{fontSize:"20px"}} color="primary">Loading Custom Data</Typography></Box>}
         </Box>
     )
 }
