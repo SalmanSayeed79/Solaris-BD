@@ -1,0 +1,13 @@
+[debug] [2021-10-02T13:49:18.589Z] ----------------------------------------------------------------------
+[debug] [2021-10-02T13:49:18.591Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\salmansayeed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-02T13:49:18.591Z] CLI Version:   8.10.0
+[debug] [2021-10-02T13:49:18.591Z] Platform:      win32
+[debug] [2021-10-02T13:49:18.591Z] Node Version:  v15.7.0
+[debug] [2021-10-02T13:49:18.592Z] Time:          Sat Oct 02 2021 19:49:18 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-02T13:49:18.592Z] ----------------------------------------------------------------------
+[debug] [2021-10-02T13:49:18.592Z] 
+[debug] [2021-10-02T13:49:18.599Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-02T13:49:18.600Z] > authorizing via signed-in user
+[debug] [2021-10-02T13:49:18.600Z] [iam] checking project solaris-bd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-02T13:49:18.602Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/solaris-bd:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
