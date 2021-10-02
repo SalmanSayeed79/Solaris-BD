@@ -1,6 +1,6 @@
 # Solaris
 
-[![244326655-332221555363473-4636031536199997176-n.jpg](https://i.postimg.cc/pLmcczpd/244326655-332221555363473-4636031536199997176-n.jpg)](https://postimg.cc/Mn8Yvc0k)
+[![Cover.png](https://i.postimg.cc/j2CPY2Sh/Cover.png)](https://postimg.cc/QKGHpX5B)
 
 ## Project Overview
 ----
